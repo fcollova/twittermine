@@ -1,0 +1,41 @@
+doctype 5
+html(ng-app='')
+    head
+      meta(charset="UTF-8")
+      title= title
+      link(rel='stylesheet', href='/stylesheets/style.css')
+      link(rel='stylesheet', href='/stylesheets/chunkfive-fontface.css')
+      script(src='/javascripts/angular.min.js')
+      script(src='/javascripts/socket.io.js')
+      script(src='/javascripts/engine.js',type='text/javascript')
+    body
+      header
+       nav
+         ul
+           li
+             h1 #{title}
+           li 
+             a(href="/") Home
+           li 
+             a(href="/about") About
+           li 
+             a(href="/contact") Contact  
+       section#wrapper
+          h2 Welcome to #{title}: minig for twitter world
+          h2
+           a(href='/auth/twitter') login on Twitter
+          h2
+           a(href='https://leztok.couchappy.com/twstream/_design/ch_twstream/index.html') Statistics
+       block content
+     footer 
+        section.css-table
+          section.four-column
+            section.cell
+              p eduardo.info@gmail.com <br /> --- <br /> ---
+            section.cell
+              p Open Source <br /> --- <br /> ---
+            section.cell
+              p Arduino <br /> --- <br /> ---
+            section.cell
+              p Education <br /> --- <br /> ---
+  

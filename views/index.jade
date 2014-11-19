@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h2 Mining
+  .content(ng-controller='TestApp')
+     h2 total count: {{count}}
+     div(ng-repeat='t in twitts')
+       p(align="left") {{t.text}}
+ 
